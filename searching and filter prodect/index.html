@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakwheels Buy & Sell Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="image/icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/16ab9b41ef.js" defer crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="nav">
+        <div class="right-side">
+            <img src="image/logo.svg" width=250>
+        </div>
+        <div class="center">
+            <input type="text" value="" onchange="seachItem()" placeholder="Find Cars, and more..."
+                id="searchitem">
+            <div class="icon"><i class="fa fa-magnifying-glass" onclick="seachItem()"></i></div>
+        </div>
+        <div class="left-side">
+            <button class="Btn loginbtn" type="button">Login</button>
+            <button class="Btn sellbtn" type="button">Sell</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <button class="Btn" id="car" onclick="showCar()"><img src="image/car.svg"> Cars</button>
+            <div class="btns" id="btnEDivC">
+                <button class="Btn" onclick="getItem('TOYOTA') "><img src="image/Tyota.png" width="40"> Toyota</button>
+                <button class="Btn" onclick="getItem('HONDA')"><img src="image/Honda.png" width="40">Honda</button>
+                <button class="Btn" onclick="getItem('SUZUKI')"><img src="image/Suzuki.png" width="40">Suzuki</button>
+                <button class="Btn" onclick="getItem('BMW')"><img src="image/BMW.png" width="40">BMW</button>
+                <button class="Btn" onclick="getItem('AUDI')"><img src="image/Audi.png" width="40">Audi</button>
+                <button class="Btn" onclick="getItem('MERCEDES')"><img src="image/mercedes.png" width="40">Mercedes</button>
+                <button class="Btn" onclick="getItem('PORSCHE')"><img src="image/porche.png" width="40">Porsche</button>
+                <button class="Btn" onclick="getItem('HYUNDAI')"><img src="image/hyundai.png" width="40">Hyundai</button>
+            </div>
+        </div>
+
+        <div class="content-box" id="conentBox">
+        </div>
+    </div>
+    <div class="footer">
+        <p class="p1">Made by Zeeshan Ahmed;</p>
+        <a href="https://github.com/zeeshan-ahmed-smit"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/zeeshan-ahmed-99094925a/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=100043989196385"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>
